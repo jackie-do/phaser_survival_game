@@ -4,6 +4,17 @@ export default class Player extends Phaser.Physics.Matter.Sprite {
     super(scene.matter.world, x, y, texture, frame)
 
     this.scene.add.existing(this);
+
+    const { Body, Bodies } = Phaser.Physics.Matter.Matter;
+    var playerCollider = Bodies.circle(this.x, this.y, 12, { isSensor: false, label: 'playerCollider' });
+    var playerSensor = Bodies.circle(this.x, this.y, 24, { isSensor: true, label: 'playerSensor' });
+    const compoundBody = Body.create({
+      parts: [playerCollider, playerSensor],
+      frictionAir: 0.35,
+    });
+    this.setExistingBody(compoundBody);
+    this.setFixedRotation();
+
   }
 
   static preload(scene) {
@@ -11,14 +22,14 @@ export default class Player extends Phaser.Physics.Matter.Sprite {
     scene.load.animation("female_anim", "assets/images/female_anim.json");
   }
 
-  // static controlMoving(scene, player) {
-  //   player.inputKeys = scene.input.keyboard.addKeys({
-  //     up: Phaser.Input.Keyboard.KeyCodes.W,
-  //     down: Phaser.Input.Keyboard.KeyCodes.S,
-  //     left: Phaser.Input.Keyboard.KeyCodes.A,
-  //     right: Phaser.Input.Keyboard.KeyCodes.D
-  //   })
-  // }
+  static controlMoving(scene, player) {
+    player.inputKeys = scene.input.keyboard.addKeys({
+      up: Phaser.Input.Keyboard.KeyCodes.W,
+      down: Phaser.Input.Keyboard.KeyCodes.S,
+      left: Phaser.Input.Keyboard.KeyCodes.A,
+      right: Phaser.Input.Keyboard.KeyCodes.D
+    })
+  }
 
   get velocity() {
     return this.body.velocity;
@@ -26,8 +37,6 @@ export default class Player extends Phaser.Physics.Matter.Sprite {
 
   update() {
     console.log("update Player")
-    console.log("x: ", this.velocity.x)
-    console.log("y: ", this.velocity.y)
     const speed = 2.5;
     let playerVelocity = new Phaser.Math.Vector2();
 
