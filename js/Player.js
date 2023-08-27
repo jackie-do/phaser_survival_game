@@ -11,19 +11,23 @@ export default class Player extends Phaser.Physics.Matter.Sprite {
     scene.load.animation("female_anim", "assets/images/female_anim.json");
   }
 
-  static controlMoving(scene, player) {
-    player.inputKeys = scene.input.keyboard.addKeys({
-      up: Phaser.Input.Keyboard.KeyCodes.W,
-      down: Phaser.Input.Keyboard.KeyCodes.S,
-      left: Phaser.Input.Keyboard.KeyCodes.A,
-      right: Phaser.Input.Keyboard.KeyCodes.D
-    })
+  // static controlMoving(scene, player) {
+  //   player.inputKeys = scene.input.keyboard.addKeys({
+  //     up: Phaser.Input.Keyboard.KeyCodes.W,
+  //     down: Phaser.Input.Keyboard.KeyCodes.S,
+  //     left: Phaser.Input.Keyboard.KeyCodes.A,
+  //     right: Phaser.Input.Keyboard.KeyCodes.D
+  //   })
+  // }
+
+  get velocity() {
+    return this.body.velocity;
   }
 
   update() {
     console.log("update Player")
-
-    this.anims.play('female_walk', true);
+    console.log("x: ", this.velocity.x)
+    console.log("y: ", this.velocity.y)
     const speed = 2.5;
     let playerVelocity = new Phaser.Math.Vector2();
 
@@ -43,5 +47,12 @@ export default class Player extends Phaser.Physics.Matter.Sprite {
     playerVelocity.normalize(); // Make moving on diagonal lines smoothly
     playerVelocity.scale(speed);
     this.setVelocity(playerVelocity.x, playerVelocity.y)
+
+    // Switch animation when moving or idle
+    if( Math.abs(this.velocity.x) > 0.1 || Math.abs(this.velocity.y) > 0.1 ) {
+      this.anims.play('female_walk', true)
+    } else {
+      this.anims.play('female_idle', true)
+    }
   }
 }
