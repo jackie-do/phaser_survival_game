@@ -22,13 +22,13 @@ export default class MainScene extends Phaser.Scene {
     this.matter.world.convertTilemapLayer(layer1)
 
     // Init resources
-    let tree = new Phaser.Physics.Matter.Sprite(this.matter.world, 50, 50, 'resources', 'tree');
-    let rock = new Phaser.Physics.Matter.Sprite(this.matter.world, 150, 150, 'resources', 'rock');
-    tree.setStatic(true); // Stop physics effect on this object
-    rock.setStatic(true);
-
-    this.add.existing(tree);
-    this.add.existing(rock);
+    this.addResources();
+    // let tree = new Phaser.Physics.Matter.Sprite(this.matter.world, 50, 50, 'resources', 'tree');
+    // let rock = new Phaser.Physics.Matter.Sprite(this.matter.world, 150, 150, 'resources', 'rock');
+    // tree.setStatic(true); // Stop physics effect on this object
+    // rock.setStatic(true);
+    // this.add.existing(tree);
+    // this.add.existing(rock);
 
     this.player = new Player({scene: this, x: 100, y: 100, texture: "female", frame: "townsfolk_f_idle_1"});
     Player.controlMoving(this, this.player)
@@ -42,5 +42,28 @@ export default class MainScene extends Phaser.Scene {
 
   update() {
     this.player.update();
+  }
+
+  addResources() {
+    // Load info of resources like: positions, properties
+    const resources = this.map.getObjectLayer('Resources');
+    resources.objects.forEach(resource => {
+      // Generate resources base on 'resources' atlas
+      let resItem = new Phaser.Physics.Matter.Sprite(this.matter.world, resource.x, resource.y, 'resources', resource.type);
+      // Center resources to fix in tile and resize base on height with yOrigin
+      let yOrigin = resource.properties.find(p => p.name == 'yOrigin').value;
+      resItem.x += resItem.width/2;
+      resItem.y -= resItem.height/2;
+      resItem.y = resItem.y + resItem.height * (yOrigin - 0.5);
+
+
+      const { _Body, Bodies } = Phaser.Physics.Matter.Matter;
+      var circleCollider = Bodies.circle(resItem.x, resItem.y, 12, { isSensor: false, label: 'collider' });
+      resItem.setExistingBody(circleCollider);
+
+      resItem.setStatic(true);
+      resItem.setOrigin(0.5, yOrigin);
+      this.add.existing(resItem);
+    })
   }
 }

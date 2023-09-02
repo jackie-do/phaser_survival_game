@@ -29,9 +29,561 @@
          "width":16,
          "x":0,
          "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":7,
+         "name":"Resources",
+         "objects":[
+                {
+                 "gid":21,
+                 "height":32,
+                 "id":14,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.8
+                        }],
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":32,
+                 "x":32,
+                 "y":64
+                }, 
+                {
+                 "gid":22,
+                 "height":32,
+                 "id":17,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"bush",
+                 "visible":true,
+                 "width":32,
+                 "x":32,
+                 "y":96
+                }, 
+                {
+                 "gid":22,
+                 "height":32,
+                 "id":18,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"bush",
+                 "visible":true,
+                 "width":32,
+                 "x":160,
+                 "y":64
+                }, 
+                {
+                 "gid":21,
+                 "height":32,
+                 "id":20,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.8
+                        }],
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":32,
+                 "x":352,
+                 "y":128
+                }, 
+                {
+                 "gid":22,
+                 "height":32,
+                 "id":21,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"bush",
+                 "visible":true,
+                 "width":32,
+                 "x":320,
+                 "y":96
+                }, 
+                {
+                 "gid":21,
+                 "height":32,
+                 "id":22,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.8
+                        }],
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":32,
+                 "x":416,
+                 "y":64
+                }, 
+                {
+                 "gid":22,
+                 "height":32,
+                 "id":23,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"bush",
+                 "visible":true,
+                 "width":32,
+                 "x":384,
+                 "y":128
+                }, 
+                {
+                 "gid":21,
+                 "height":32,
+                 "id":24,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.8
+                        }],
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":32,
+                 "x":416,
+                 "y":192
+                }, 
+                {
+                 "gid":21,
+                 "height":32,
+                 "id":25,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.8
+                        }],
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":32,
+                 "x":256,
+                 "y":160
+                }, 
+                {
+                 "gid":23,
+                 "height":32,
+                 "id":26,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"rock",
+                 "visible":true,
+                 "width":32,
+                 "x":320,
+                 "y":160
+                }, 
+                {
+                 "gid":21,
+                 "height":32,
+                 "id":27,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.8
+                        }],
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":32,
+                 "x":288,
+                 "y":224
+                }, 
+                {
+                 "gid":23,
+                 "height":32,
+                 "id":28,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"rock",
+                 "visible":true,
+                 "width":32,
+                 "x":320,
+                 "y":224
+                }, 
+                {
+                 "gid":23,
+                 "height":32,
+                 "id":29,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"rock",
+                 "visible":true,
+                 "width":32,
+                 "x":384,
+                 "y":256
+                }, 
+                {
+                 "gid":22,
+                 "height":32,
+                 "id":30,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"bush",
+                 "visible":true,
+                 "width":32,
+                 "x":256,
+                 "y":288
+                }, 
+                {
+                 "gid":22,
+                 "height":32,
+                 "id":31,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"bush",
+                 "visible":true,
+                 "width":32,
+                 "x":64,
+                 "y":288
+                }, 
+                {
+                 "gid":23,
+                 "height":32,
+                 "id":32,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"rock",
+                 "visible":true,
+                 "width":32,
+                 "x":96,
+                 "y":320
+                },
+            
+                {
+                 "gid":22,
+                 "height":32,
+                 "id":33,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"bush",
+                 "visible":true,
+                 "width":32,
+                 "x":32,
+                 "y":352
+                }, 
+                {
+                 "gid":21,
+                 "height":32,
+                 "id":34,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.8
+                        }],
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":32,
+                 "x":64,
+                 "y":416
+                }, 
+                {
+                 "gid":21,
+                 "height":32,
+                 "id":35,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.8
+                        }],
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":32,
+                 "x":96,
+                 "y":448
+                }, 
+                {
+                 "gid":21,
+                 "height":32,
+                 "id":36,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.8
+                        }],
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":32,
+                 "x":128,
+                 "y":480
+                }, 
+                {
+                 "gid":23,
+                 "height":32,
+                 "id":37,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"rock",
+                 "visible":true,
+                 "width":32,
+                 "x":96,
+                 "y":416
+                }, 
+                {
+                 "gid":21,
+                 "height":32,
+                 "id":38,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.8
+                        }],
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":32,
+                 "x":128,
+                 "y":416
+                }, 
+                {
+                 "gid":23,
+                 "height":32,
+                 "id":39,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"rock",
+                 "visible":true,
+                 "width":32,
+                 "x":160,
+                 "y":384
+                }, 
+                {
+                 "gid":23,
+                 "height":32,
+                 "id":40,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"rock",
+                 "visible":true,
+                 "width":32,
+                 "x":160,
+                 "y":448
+                }, 
+                {
+                 "gid":22,
+                 "height":32,
+                 "id":41,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"bush",
+                 "visible":true,
+                 "width":32,
+                 "x":192,
+                 "y":480
+                }, 
+                {
+                 "gid":22,
+                 "height":32,
+                 "id":42,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"bush",
+                 "visible":true,
+                 "width":32,
+                 "x":320,
+                 "y":352
+                }, 
+                {
+                 "gid":23,
+                 "height":32,
+                 "id":43,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"rock",
+                 "visible":true,
+                 "width":32,
+                 "x":384,
+                 "y":416
+                }, 
+                {
+                 "gid":22,
+                 "height":32,
+                 "id":44,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"bush",
+                 "visible":true,
+                 "width":32,
+                 "x":352,
+                 "y":480
+                }, 
+                {
+                 "gid":21,
+                 "height":32,
+                 "id":45,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.8
+                        }],
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":32,
+                 "x":416,
+                 "y":480
+                }, 
+                {
+                 "gid":22,
+                 "height":32,
+                 "id":46,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "rotation":0,
+                 "type":"bush",
+                 "visible":true,
+                 "width":32,
+                 "x":416,
+                 "y":320
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
         }],
- "nextlayerid":3,
- "nextobjectid":1,
+ "nextlayerid":8,
+ "nextobjectid":47,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",
@@ -50,11 +602,40 @@
          "tileheight":32,
          "tiles":[
                 {
+                 "id":20,
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.8
+                        }],
+                 "type":"tree"
+                }, 
+                {
+                 "id":21,
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "type":"bush"
+                }, 
+                {
+                 "id":22,
+                 "properties":[
+                        {
+                         "name":"yOrigin",
+                         "type":"float",
+                         "value":0.6
+                        }],
+                 "type":"rock"
+                }, 
+                {
                  "id":65,
                  "objectgroup":
                     {
                      "draworder":"index",
-                     "id":2,
                      "name":"",
                      "objects":[
                             {
@@ -97,7 +678,6 @@
                  "objectgroup":
                     {
                      "draworder":"index",
-                     "id":5,
                      "name":"",
                      "objects":[
                             {
@@ -129,7 +709,6 @@
                  "objectgroup":
                     {
                      "draworder":"index",
-                     "id":2,
                      "name":"",
                      "objects":[
                             {
@@ -172,7 +751,6 @@
                  "objectgroup":
                     {
                      "draworder":"index",
-                     "id":2,
                      "name":"",
                      "objects":[
                             {
@@ -204,7 +782,6 @@
                  "objectgroup":
                     {
                      "draworder":"index",
-                     "id":2,
                      "name":"",
                      "objects":[
                             {
@@ -236,7 +813,6 @@
                  "objectgroup":
                     {
                      "draworder":"index",
-                     "id":2,
                      "name":"",
                      "objects":[
                             {
@@ -268,7 +844,6 @@
                  "objectgroup":
                     {
                      "draworder":"index",
-                     "id":2,
                      "name":"",
                      "objects":[
                             {
@@ -300,7 +875,6 @@
                  "objectgroup":
                     {
                      "draworder":"index",
-                     "id":2,
                      "name":"",
                      "objects":[
                             {
@@ -332,7 +906,6 @@
                  "objectgroup":
                     {
                      "draworder":"index",
-                     "id":2,
                      "name":"",
                      "objects":[
                             {
@@ -364,7 +937,6 @@
                  "objectgroup":
                     {
                      "draworder":"index",
-                     "id":2,
                      "name":"",
                      "objects":[
                             {
@@ -407,7 +979,6 @@
                  "objectgroup":
                     {
                      "draworder":"index",
-                     "id":2,
                      "name":"",
                      "objects":[
                             {
@@ -439,7 +1010,6 @@
                  "objectgroup":
                     {
                      "draworder":"index",
-                     "id":2,
                      "name":"",
                      "objects":[
                             {
